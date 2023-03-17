@@ -100,3 +100,7 @@ func (c *CDEKClient) Calculate(addrFrom string, addrTo string, size Size) ([]Pri
 
 	return prices, nil
 }
+
+func Hello(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello World!")
+}
